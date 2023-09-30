@@ -54,7 +54,7 @@ const displayTime = () => {
 // Appel de la fonction displayTime
 displayTime();
 
-// Déclaration de la fonction breakdown qui va décompte une seconde
+// Déclaration de la fonction breakdown (décompte) qui va décompter une seconde
 const breakdown = () => {
   if (secondsInRest) {
     secondsInRest--;
@@ -80,6 +80,7 @@ const breakdown = () => {
 // Variable interval qui va stocker l'interval
 let interval;
 
+// Dès le chargement de la page
 window.onload = () => {
   // Appel de la fonction displayTime
   displayTime();
