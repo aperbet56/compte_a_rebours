@@ -1,0 +1,88 @@
+// Récupération des différents éléments
+const days = document.querySelector("#days");
+const hours = document.querySelector("#hours");
+const minutes = document.querySelector("#minutes");
+const seconds = document.querySelector("#seconds");
+
+// Date actuelle
+const now = new Date();
+
+// Date de fin du compteur
+const christmas = new Date("2023-12-25 00:00:00");
+
+// Durée entre les deux dates
+const duration = christmas - now;
+// Nombre en millisecondes
+console.log(duration);
+
+// Calcul du nombre de jours dans la durée
+// Durée d'un jour : 24h * 60mn * 60s * 1000ms
+// 86 400 000ms
+let daysInDuration = Math.floor(duration / (24 * 60 * 60 * 1000));
+
+// Calcul du temps restant après retrait des jours
+let rest = duration % (24 * 60 * 60 * 1000);
+console.log(rest);
+
+// Calucul du nombre d'heures dans le reste
+// Durée d'une heure : 60mn * 60s * 1000ms
+// 3 600 000ms
+let hoursInRest = Math.floor(rest / (60 * 60 * 1000));
+
+// Calcul du temps restant après retrait des heures
+rest = rest % (60 * 60 * 1000);
+
+// Calcul du nombre de minutes dans le reste
+// Durée d'une minute : 60s * 1000ms
+// 60000ms
+let minutesInRest = Math.floor(rest / (60 * 1000));
+
+// Calcul du temps restant après retrait des minutes
+rest = rest % (60 * 1000);
+
+// Calcul du nombre de secondes dans le reste
+// Durée d'une seconde : 1000ms
+let secondsInRest = Math.floor(rest / 1000);
+
+// Déclaration de la fonction displayTime qui va permettre la mise à jour du compteur
+const displayTime = () => {
+  days.textContent = daysInDuration;
+  hours.textContent = hoursInRest;
+  minutes.textContent = minutesInRest;
+  seconds.textContent = secondsInRest;
+};
+// Appel de la fonction displayTime
+displayTime();
+
+// Déclaration de la fonction breakdown qui va décompte une seconde
+const breakdown = () => {
+  if (secondsInRest) {
+    secondsInRest--;
+  } else if (minutesInRest) {
+    secondsInRest = 59;
+    minutesInRest--;
+  } else if (hoursInRest) {
+    secondsInRest = 59;
+    minutesInRest = 59;
+    hoursInRest--;
+  } else if (daysInDuration) {
+    secondsInRest = 59;
+    minutesInRest = 59;
+    hoursInRest = 23;
+    daysInDuration--;
+  } else {
+    clearInterval(interval);
+  }
+  //Appel de la fonction displayTime
+  displayTime();
+};
+
+// Variable interval qui va stocker l'interval
+let interval;
+
+window.onload = () => {
+  // Appel de la fonction displayTime
+  displayTime();
+
+  interval = setInterval(breakdown, 1000); // Appel de la fonction breakdown toute les 1000ms soit toutes les secondes
+};
