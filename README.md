@@ -10,6 +10,10 @@ Mon challenge était de construire un compte à rebours jsuqu'à Noël. Pour se 
 
 - Mon compte à rebours se met à jour toutes les secondes(dégrémentation des valeurs du compte à rebours de manière progressive).
 
+## Démonstration
+
+Lien vers le projet : https://aperbet56.github.io/compte_a_rebours/
+
 ## Développez avec
 
 - Utilisation des balises sémantiques HTML5
