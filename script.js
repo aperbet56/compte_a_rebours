@@ -8,7 +8,7 @@ const seconds = document.querySelector("#seconds");
 const now = new Date();
 
 // Date de fin du compteur
-const christmas = new Date("2024-12-25 00:00:00");
+const christmas = new Date("2025-12-25 00:00:00");
 
 // Durée entre les deux dates
 const duration = christmas - now;
