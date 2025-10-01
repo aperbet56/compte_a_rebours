@@ -87,3 +87,8 @@ window.onload = () => {
 
   interval = setInterval(breakdown, 1000); // Appel de la fonction breakdown toute les 1000ms soit toutes les secondes
 };
+
+// Ecoute du changement de la page
+window.addEventListener("load", (e) => {
+  new cursoreffects.snowflakeCursor();
+});
