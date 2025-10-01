@@ -2,7 +2,7 @@
 
 ## Le challenge
 
-Mon challenge était de construire un compte à rebours jsuqu'à Noël. Pour se faire :
+Mon challenge était de construire un compte à rebours jusqu'à Noël. Pour se faire :
 
 - J'ai d'abord récupéré la date actuelle et ensuite fixé la date de fin du compte à rebours à Noël (25/12/25).
 
@@ -17,10 +17,11 @@ Lien vers le projet : https://aperbet56.github.io/compte_a_rebours/
 ## Projet développé avec
 
 - Utilisation des balises sémantiques HTML5
-- CSS
+- CSS3
 - Flexbox
 - Page web responsive
 - Utilisation d'un normaliseur : le fichier normalize.css
 - JavaScript
 - Présence de commentaires dans le fichier script.js
 - Desktop first
+- Cursor effect js
