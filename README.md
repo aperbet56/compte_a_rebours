@@ -1,5 +1,7 @@
 ## 🎄 COMPTE A REBOURS JUSQU'A NOEL 🎅
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Mon challenge était de construire un compte à rebours jusqu'à Noël. Pour se faire :
