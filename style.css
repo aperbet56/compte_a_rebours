@@ -15,11 +15,13 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: sans-serif;
-    background-color: rgb(236, 61, 61);
+    /* background-color: rgb(236, 61, 61);*/
+    background: linear-gradient(0deg, #095228 50%, #d4423e 50%);
     color: #ffffff;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +52,9 @@ header h1 {
     max-width: 800px;
     width: 100%;
     border: 2px solid #ffffff;
+    background-color: #eec66c;
+    color: #000000;
+    border: 2px solid #000000;
     border-radius: 12px;
     padding: 40px;
 }
