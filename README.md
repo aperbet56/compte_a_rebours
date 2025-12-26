@@ -6,7 +6,7 @@
 
 Mon challenge était de construire un compte à rebours jusqu'à Noël. Pour se faire :
 
-- J'ai d'abord récupéré la date actuelle et ensuite fixé la date de fin du compte à rebours à Noël (25/12/25).
+- J'ai d'abord récupéré la date actuelle et ensuite fixé la date de fin du compte à rebours à Noël (25/12/26).
 
 - Ainsi, mon comte à rebours va afficher le temps qu'il reste pour arriver à Noël en jours, heures, minutes et secondes.
 
