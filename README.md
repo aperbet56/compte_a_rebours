@@ -10,7 +10,7 @@ Mon challenge était de construire un compte à rebours jusqu'à Noël. Pour se 
 
 - Ainsi, mon comte à rebours va afficher le temps qu'il reste pour arriver à Noël en jours, heures, minutes et secondes.
 
-- Mon compte à rebours se met à jour toutes les secondes(dégrémentation des valeurs du compte à rebours de manière progressive).
+- Mon compte à rebours se met à jour toutes les secondes (dégrémentation des valeurs du compte à rebours de manière progressive).
 
 ## Démonstration
 
